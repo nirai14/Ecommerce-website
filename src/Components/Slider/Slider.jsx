@@ -1,10 +1,7 @@
 import React from 'react'
 import './Slider.css'
 import {Swiper, SwiperSlide} from 'swiper/react'
-import { Pagination, Navigation } from 'swiper';
 import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
 import { ProductsData} from '../../data/products'
 
 const Slider = () => {
