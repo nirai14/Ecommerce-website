@@ -1,0 +1,54 @@
+.s-container{
+position: relative;
+top: 40px;
+}
+.s-container .swiper{
+width: 70%;
+height: 12rem;
+position: unset;
+}
+.s-container .swiper-slide{
+    background: white;
+    display: flex;
+    border-radius: 10px;
+    padding: 1rem;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+}
+.name>:nth-child(1){
+font-size: 1.4rem;
+font-weight: 600;
+display: flex;
+flex-direction: column;
+}
+.name>:nth-child(2){
+    font-size: .8rem;
+    }
+.left-s>:nth-child(2){
+font-weight: bold;
+font-style: 2rem;
+font-size: 1.5rem;
+    }
+.left-s>:nth-child(3){
+    font-size: .8rem;
+    border: 1px solid var(--black);
+    padding: 5px 10px;
+    width: max-content;
+    border-radius:15px ;
+    cursor: pointer;
+    }
+.left-s{
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+        }
+.img-p{
+    transform: rotate(-20deg);
+    position: absolute;
+    right: 0;
+    width: 35%;
+    height: 100%;
+    bottom: -20%;
+    }
+        

@@ -1,0 +1,101 @@
+.container{
+    justify-content: center;
+   align-items: center;
+   position: relative;
+   padding: 0 2rem;
+   display: flex;
+   flex-direction: column;
+   gap: 2rem;
+}
+.container>:nth-child(1){
+    position: absolute;
+    width: 8rem;
+    top: -5rem;
+    left: 25%;
+}
+.container>:nth-child(2){
+font-size: 2rem;
+font-weight: 800;
+}
+.products{
+    display: grid;
+    width:90%;
+    grid-template-columns: 25% auto; 
+}
+.product{
+    background: white;
+    height: 9rem;
+    display: flex;
+    border-radius: 10px;
+    padding: 1rem;
+    box-sizing: border-box;
+    position: relative;
+    gap: 2rem;
+    width: 13rem;
+    overflow: hidden;
+}
+
+.name>:nth-child(1){
+    font-size: 1.4rem;
+    font-weight: 600;
+    display: flex;
+    }
+
+    .name>:nth-child(2){
+        font-size: .8rem;
+        }
+
+    /* .left-s>:nth-child(2){
+    font-weight: bold;
+    font-style: 2rem;
+    font-size: 1rem;
+        }
+    .left-s>:nth-child(3){
+        font-size: .2rem;
+        border: 1px solid var(--black);
+        padding: 5px 10px;
+        border-radius:15px ;
+        cursor: pointer;
+        } */
+    
+    .imgp{
+        transform: rotate(-20deg);
+        position: absolute;
+        right: 0;
+        width: 30%;
+        height: 100%;
+        bottom: -30%;
+        }
+   .menu{
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            font-weight: 500;
+            font-size: 1.3rem
+        }
+        .menu li:hover{
+            color: var(--pink);
+            cursor: pointer;
+        }
+        .list{
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+            height: 25rem;
+            overflow-y: scroll;
+            gap: 2rem;
+        }
+       
+        @media (max-width:800px){
+            .menu{
+                display: flex;
+           flex-direction: row;
+   position: relative;
+   left: -60px;
+        }
+            .list{
+                margin-top: 50%;
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+            }
+                  }
