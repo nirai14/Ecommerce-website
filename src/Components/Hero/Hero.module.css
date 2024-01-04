@@ -114,13 +114,13 @@
 
 @media (max-width:700px){
     .wrapper img{
-        width:13rem;
+        width:16rem;
         position: relative;
         top: 40px;
     }
     .blueCircle{
-        width: 12rem;
-        height: 12rem;
+        width: 16rem;
+        height: 16rem;
     }
     .text1,.text2,.traffic,.customer{
         display: none;

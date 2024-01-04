@@ -41,8 +41,8 @@ text-transform: uppercase;
    .compare{
     display: flex;
  flex-direction: column;
-    padding: 1rem;
-
+    padding:0rem 4rem;
+  
    }
    .left{
     gap: .5rem;

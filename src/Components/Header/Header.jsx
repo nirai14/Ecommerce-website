@@ -10,6 +10,9 @@ const Header = () => {
   const handleMenuClick = () => {
     setShowMenu(!showMenu);
   };
+
+
+ 
   return (
     <div className={styles.container}>
       <div className={styles.menubarr}>
@@ -37,7 +40,7 @@ const Header = () => {
 </ul>
 </div>
 <input type="text" placeholder='Search' className={styles.search}/>
-<AiOutlineShopping  className={styles.cart}/>
+<AiOutlineShopping  className={styles.cart} />
 </div>
     </div>
 

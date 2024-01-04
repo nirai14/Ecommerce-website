@@ -16,11 +16,11 @@ const Products = () => {
   return (
 <div className={css.container}>
     <img src={plane} alt="" />
-    <span>Our Featured Products</span>
+    <span >Our Featured Products</span>
     <div className={css.products}>
 <ul className={css.menu}>
   <li onClick={()=>setMenuProducts(ProductsData)}>All</li>
-  <li onClick={()=>filter("skin care")}>Skin Care</li>
+  <li onClick={()=>filter("skin care")}>Skin</li>
   <li onClick={()=>filter("conditioner")}>Conditioner</li>
   <li onClick={()=>filter("foundation")}>Foundation</li>
 </ul>

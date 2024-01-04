@@ -61,6 +61,7 @@ Safety Privacy and Terms
   </div>
 </div>
   </div>
+  <hr />
   <div className={css.copyrights}>
     <span>Copyright @2022 by Amazon, Inc </span>
     <span>All rights reserved.</span>
