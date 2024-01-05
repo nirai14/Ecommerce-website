@@ -1,80 +1,94 @@
-.container{
+.container {
     padding: 0rem 2rem;
     display: grid;
     grid-template-columns: 1fr 3.5fr 1fr;
 }
-.h_sides{
+
+.h_sides {
     display: grid;
-    grid-template-rows:1fr 1fr ;
+    grid-template-rows: 1fr 1fr;
 }
-.text1{
+
+.text1 {
     text-transform: uppercase;
     font-size: 1.5rem;
     width: min-content;
     display: block;
     font-weight: 600;
 }
-.text2{
+
+.text2 {
     display: flex;
     flex-direction: column;
     width: min-content;
-    color:black ;
+    color: black;
 }
-.text2>:first-child{
+
+.text2>:first-child {
     font-weight: 800;
     font-size: 2.5rem;
 }
-.text2>:nth-child(2){
+
+.text2>:nth-child(2) {
     display: block;
 }
-.wrapper{
+
+.wrapper {
     display: flex;
     align-items: baseline;
     justify-content: center;
     position: relative;
-      overflow: hidden;
+    overflow: hidden;
 }
-.wrapper img{
-    width:28rem;
+
+.wrapper img {
+    width: 28rem;
     position: relative;
     top: 40px;
 }
-.blueCircle{
+
+.blueCircle {
     width: 25rem;
     height: 25rem;
-    background:linear-gradient(135.74deg,#0bb5ff 14.09%,#6dd3fe 83.81%);
+    background: linear-gradient(135.74deg, #0bb5ff 14.09%, #6dd3fe 83.81%);
     border-radius: 50%;
     position: absolute;
     z-index: -1;
     bottom: 0;
 }
-.traffic{
+
+.traffic {
     display: flex;
     flex-direction: column;
     text-align: center;
 }
-.traffic>:first-child{
+
+.traffic>:first-child {
     font-weight: 800;
     font-size: 2.5rem;
 }
-.customer{
+
+.customer {
     display: flex;
     flex-direction: column;
     text-align: right;
 }
-.customer>:first-child{
+
+.customer>:first-child {
     font-weight: 800;
     font-size: 2.5rem;
 }
-.cart2{
+
+.cart2 {
     position: absolute;
     bottom: 25%;
     display: flex;
     gap: 1rem;
     align-items: center;
- 
+
 }
-.cart2>svg{
+
+.cart2>svg {
     width: 25px;
     height: 25px;
     background-color: white;
@@ -84,7 +98,8 @@
     cursor: pointer;
     margin-right: -10px;
 }
-.signup{
+
+.signup {
     display: flex;
     gap: .0001rem;
     align-items: center;
@@ -92,17 +107,17 @@
     padding: 7px;
     font-size: .8rem;
     border-radius: 15px;
-    box-shadow: 5px 5px rgb(179, 176, 176) ;
+    box-shadow: 5px 5px rgb(179, 176, 176);
     margin-right: 10px;
-   
-  
 }
-.signup>:first-child{
+
+.signup>:first-child {
     width: 5rem;
 }
-.signup>:nth-child(2){
+
+.signup>:nth-child(2) {
     border-radius: 50%;
-    border: 1px solid skyblue ;
+    border: 1px solid skyblue;
     display: flex;
     height: 20px;
     width: 20px;
@@ -112,49 +127,59 @@
     cursor: pointer;
 }
 
-@media (max-width:700px){
-    .wrapper img{
-        width:16rem;
+@media (max-width:768px) {
+    .wrapper img {
+        width: 16rem;
         position: relative;
         top: 40px;
     }
-    .blueCircle{
+
+    .blueCircle {
         width: 16rem;
         height: 16rem;
     }
-    .text1,.text2,.traffic,.customer{
+
+    .text1,
+    .text2,
+    .traffic,
+    .customer {
         display: none;
     }
-   .container{ 
-    grid-template-columns: 0fr 1fr 0fr;
-    padding: 0 0rem;
-   }
-   .cart2{
-    position: absolute;
-    top: 150px;
-   
-   }
-    .cart2>svg{
-width: 14px;
-padding: 5px;
-border: 4px solid var(--black);
-height: 14px;
-margin-right: -13px;
+
+    .container {
+        grid-template-columns: 0fr 1fr 0fr;
+        padding: 0 0rem;
     }
-   
-    .signup{
+
+    .cart2 {
+        position: absolute;
+        top: 150px;
+
+    }
+
+    .cart2>svg {
+        width: 14px;
+        padding: 5px;
+        border: 4px solid var(--black);
+        height: 14px;
+        margin-right: -13px;
+    }
+
+    .signup {
         font-size: .5rem;
         border-radius: 15px;
-        padding:5px 4px;
+        padding: 5px 4px;
         gap: .001rem;
     }
-    .signup>:first-child{
-        width: 4rem;  
+
+    .signup>:first-child {
+        width: 4rem;
     }
-    .signup>:nth-child(2){
-        height:10px;
+
+    .signup>:nth-child(2) {
+        height: 10px;
         width: 10px;
-        padding:10px;
+        padding: 10px;
     }
- 
+
 }

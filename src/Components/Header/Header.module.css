@@ -1,5 +1,14 @@
+body{
+    margin: 0;
+padding: 0;
+width: 100%;
+
+    box-sizing: border-box;
+
+}
+
 .container{
-    padding: 1.5rem;
+    padding:1rem 2rem;
     display: flex;
 }
 .logo{
@@ -48,8 +57,12 @@
 .menubarr{
     display: none;
 }
-@media (max-width:700px){
-  
+@media (max-width:768px){
+    body{
+        margin: 0;
+    padding: 0;
+    width: 50%;
+    }
 .menu {
     display: none;
 }
@@ -68,9 +81,7 @@
     position: absolute;
     top: 4rem; 
     left: -20px;
-   
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    width: 100%;
     width: 90px;
     text-align: center;
     z-index: 1;

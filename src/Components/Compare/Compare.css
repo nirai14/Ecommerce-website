@@ -1,7 +1,11 @@
+body{
+    margin: 0;
+padding: 0;
+}
 .compare{
     display: flex;
     justify-content: space-around;
-    padding: 2rem;
+    padding: 0rem;
     margin-top: 6rem;
     margin-bottom: 6rem;
 }
@@ -31,18 +35,16 @@ text-transform: uppercase;
     position:absolute;
     width: 10rem;
     bottom: 5rem;
-
 }
 .wrapper{
    width: 30rem;
 }
-@media (max-width:700px){
- 
+@media (max-width:768px){
    .compare{
     display: flex;
  flex-direction: column;
-    padding:0rem 4rem;
-  
+    padding:1rem 2rem;
+
    }
    .left{
     gap: .5rem;
@@ -52,7 +54,7 @@ text-transform: uppercase;
     top: 1px;
    }
    .wrapper{
-    width: 15rem;
+    width: 10rem;
    
    }
 }
